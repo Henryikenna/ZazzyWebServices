@@ -24,9 +24,25 @@ body {
     color: #fff;
 }
 
+
+.load {
+    opacity: .9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 9999;
+}
+
 .custom-loader {
     width: 50px;
     height: 24px;
+    opacity: 1;
     background:
         radial-gradient(circle closest-side, #4B0082 90%, #0000) 0% 50%,
         radial-gradient(circle closest-side, #4B0082 90%, #0000) 50% 50%,
@@ -293,12 +309,14 @@ header .hrightSide .hrssocialLinks a {
 .fourthSec .fosefirstPart .fosefpimages img {
     width: 300px;
 }
+
 .fifthSec {
     background: #390161;
     background-size: cover;
     background-repeat: no-repeat;
 }
-.fifthSec .fiseMain{
+
+.fifthSec .fiseMain {
     padding: 20px 100px;
     display: flex;
     gap: 250px;
@@ -332,20 +350,23 @@ header .hrightSide .hrssocialLinks a {
     font-size: 20px;
     font-weight: 500;
 }
-.sixthSec .siseMain{
+
+.sixthSec .siseMain {
     padding: 20px 100px;
     display: flex;
     gap: 250px;
     align-items: center;
 
 }
-.sixthSec .siseMain .siseLeft .siselFirst{
+
+.sixthSec .siseMain .siseLeft .siselFirst {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-size: 30px;
     color: #fff;
 }
-.sixthSec .siseMain .siseLeft .siseSecond{
+
+.sixthSec .siseMain .siseLeft .siseSecond {
     font-weight: 400;
     font-size: 18px;
     margin-top: -10px;
@@ -353,11 +374,13 @@ header .hrightSide .hrssocialLinks a {
     color: #fff;
     font-family: 'Poppins', sans-serif;
 }
-.sixthSec .siseMain .siseRight{
+
+.sixthSec .siseMain .siseRight {
     display: flex;
     align-items: center;
 }
-.sixthSec .siseMain .siseRight input{
+
+.sixthSec .siseMain .siseRight input {
     width: 250px;
     height: 51.2px;
     padding-left: 16px;
@@ -367,7 +390,8 @@ header .hrightSide .hrssocialLinks a {
     outline: none;
     border: none;
 }
-.sixthSec .siseMain .siseRight button{
+
+.sixthSec .siseMain .siseRight button {
     color: #fff;
     height: 55px;
     width: 130px;
