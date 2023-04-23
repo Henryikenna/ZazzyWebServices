@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+body {
+    background-image: linear-gradient(45deg, #4B0082, #FFFF00);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+::-moz-selection {
+    background-color: #390161;
+    color: #fff;
+}
+
+::selection {
+    background-color: #390161;
+    color: #fff;
+}
+
+::-webkit-selection {
+    background-color: #390161;
+    color: #fff;
+}
+
+.custom-loader {
+    width: 50px;
+    height: 24px;
+    background:
+        radial-gradient(circle closest-side, #4B0082 90%, #0000) 0% 50%,
+        radial-gradient(circle closest-side, #4B0082 90%, #0000) 50% 50%,
+        radial-gradient(circle closest-side, #4B0082 90%, #0000) 100% 50%;
+    background-size: calc(100%/3) 12px;
+    background-repeat: no-repeat;
+    animation: d3 1s infinite linear;
+}
+
+@keyframes d3 {
+    20% {
+        background-position: 0% 0%, 50% 50%, 100% 50%
+    }
+
+    40% {
+        background-position: 0% 100%, 50% 0%, 100% 50%
+    }
+
+    60% {
+        background-position: 0% 50%, 50% 100%, 100% 0%
+    }
+
+    80% {
+        background-position: 0% 50%, 50% 50%, 100% 100%
+    }
+}
+
+header {
+    padding-left: 100px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    gap: 200px;
+    background-color: #4B0082;
+    background-size: cover;
+    height: auto;
+}
+
+header .hleftSide img {
+    width: 220px;
+}
+
+header .hrightSide {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+header .hrightSide .hrsmainMenu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+header .hrightSide .hrsmainMenu a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+header .hrightSide .hrssocialLinks {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+header .hrightSide .hrssocialLinks a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.firstSec {
+    text-align: center;
+    margin: 120px;
+}
+
+.firstSec .fsHead {
+    font-size: 59px;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    line-height: 77px;
+}
+
+.firstSec .fsHead .fshAnimation {
+    text-decoration: none;
+    color: #fff;
+    cursor: default;
+    animation: change-color 1.8s infinite;
+}
+
+@keyframes change-color {
+    0% {
+        color: #000;
+    }
+
+    25% {
+        color: rgb(44, 14, 71);
+    }
+
+    50% {
+        color: #421111;
+    }
+
+    75% {
+        color: #191970;
+    }
+
+    100% {
+        color: rgb(65, 46, 13);
+    }
+}
+
+.firstSec .fsTagline {
+    font-size: 18px;
+    color: #121250;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-top: -30px;
+}
+
+.firstSec .fsgetStarted {
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #FFFF00;
+    background-color: #4B0082;
+    padding: 15px 25px;
+    font-weight: 600;
+    border-radius: 6px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.secondSec {
+    /*background: url("imgs/wavybg.png");*/
+    background-color: aliceblue;
+}
+
+.secondSec .firstPart {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.secondSec .firstPart .ssfpTitle {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    color: #121250;
+    border-bottom: 3px solid #d1d100;
+    width: 530px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.secondSec .firstPart .ssfpCards {
+    display: flex;
+    margin-left: 30px;
+    margin-right: 30px;
+    gap: 10px;
+}
+
+.secondSec .firstPart .ssfpCards .ssfpCard {
+    background-color: #cfd3db;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.secondSec .firstPart .ssfpCards .ssfpCard i {
+    font-size: 50px;
+    color: #121250;
+}
+
+.secondSec .firstPart .ssfpCards .ssfpCard .fpcTitle {
+    color: #121250;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.secondSec .firstPart .ssfpCards .ssfpCard .fpcDesc {
+    color: #7a7a7a;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+.thirdSec {
+    margin: 70px;
+    margin-top: -50px;
+    /*margin-bottom: -50px;*/
+    display: flex;
+    align-items: center;
+}
+
+.thirdSec .tsLeft .tslFirst {
+    font-weight: 900;
+    color: #fff;
+    font-size: 59px;
+    width: 600px;
+    line-height: 70px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.thirdSec .tsLeft .tslSecond {
+    margin-top: -30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: #faf613;
+    margin-bottom: 60px;
+    letter-spacing: .1px;
+    width: 530px;
+}
+
+.thirdSec .tsLeft .tslLink {
+    color: #54595f;
+    font-weight: 600;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    padding: 16px 25px;
+    border-radius: 6px;
+    background-color: #FFA500;
+}
+
+.thirdSec .tsRight {
+    padding-top: 150px;
+}
+
+.thirdSec .tsRight img {
+    width: 650px;
+}
+
+.fourthSec {
+    background-color: #fff;
+}
+
+.fourthSec .fosefirstPart {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.fourthSec .fosefirstPart .fosefpTitle {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    color: #121250;
+    border-bottom: 3px solid #d1d100;
+    width: 390px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.fourthSec .fosefirstPart .fosefpimages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fourthSec .fosefirstPart .fosefpimages img {
+    width: 300px;
+}
+.fifthSec {
+    background: #390161;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.fifthSec .fiseMain{
+    padding: 20px 100px;
+    display: flex;
+    gap: 250px;
+    align-items: center;
+}
+
+.fifthSec .fiseMain .fiseLeft p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 45px;
+    width: 550px;
+    line-height: 62px;
+    color: #fff;
+}
+
+.fifthSec .fiseMain .fiseRight {
+    display: flex;
+    align-items: center;
+}
+
+.fifthSec .fiseMain .fiseRight a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    padding: 25px 40px;
+    background-image: linear-gradient(45deg, #32e674, #1b9e4b);
+    border-radius: 6px;
+    color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+.sixthSec .siseMain{
+    padding: 20px 100px;
+    display: flex;
+    gap: 250px;
+    align-items: center;
+
+}
+.sixthSec .siseMain .siseLeft .siselFirst{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    color: #fff;
+}
+.sixthSec .siseMain .siseLeft .siseSecond{
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: -10px;
+    width: 500px;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+.sixthSec .siseMain .siseRight{
+    display: flex;
+    align-items: center;
+}
+.sixthSec .siseMain .siseRight input{
+    width: 250px;
+    height: 51.2px;
+    padding-left: 16px;
+    color: #7a7a7a;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    outline: none;
+    border: none;
+}
+.sixthSec .siseMain .siseRight button{
+    color: #fff;
+    height: 55px;
+    width: 130px;
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+    background-color: #4B0082;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
