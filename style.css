@@ -106,6 +106,10 @@ header .hrightSide .hrsmainMenu a {
     font-size: 18px;
 }
 
+header .hrightSide .hrsmainMenu a:hover{
+    border-bottom: 1.5px solid #fff;
+}
+
 header .hrightSide .hrssocialLinks {
     display: flex;
     align-items: center;
@@ -609,6 +613,35 @@ footer .footerAll .fasecondPart img {
         font-family: 'Poppins', sans-serif;
         font-weight: 600;
         line-height: 36px;
+    }
+
+    .firstSec .fsHead .fshAnimation {
+        text-decoration: none;
+        color: #fff;
+        cursor: default;
+        animation: change-color 1.8s infinite;
+    }
+    
+    @keyframes change-color {
+        0% {
+            color: #494949;
+        }
+    
+        25% {
+            color: rgb(162, 56, 255);
+        }
+    
+        50% {
+            color: #ff3434;
+        }
+    
+        75% {
+            color: #2929ff;
+        }
+    
+        100% {
+            color: rgb(255, 173, 33);
+        }
     }
 
     .firstSec .fsTagline {
