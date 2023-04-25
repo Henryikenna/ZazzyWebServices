@@ -63,9 +63,19 @@
             <ul class="menu">
                 <button class="close-btn">&times;</button>
                 <ul>
-                    <li><a href="#">Menu Item 1</a></li>
-                    <li><a href="#">Menu Item 2</a></li>
-                    <li><a href="#">Menu Item 3</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li style="border-bottom: 1px solid #fff;"><a href="#">Contact</a></li>
+
+                    <li style="display: flex; align-items: center; gap: 20px; font-size: 20px;">
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-facebook"></i></a>
+                        <a href=""><i class="fab fa-telegram"></i></a>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                    </li>
                 </ul>
             </ul>
         </div>
@@ -220,11 +230,31 @@
     </footer>
 
     <style>
-        
+
     </style>
 
     <script>
-        
+        const menuBtn = document.querySelector(".menu-btn");
+        const menu = document.querySelector(".menu");
+        const closeBtn = document.querySelector(".close-btn");
+
+        let menuOpen = false;
+
+        menuBtn.addEventListener("click", () => {
+            if (!menuOpen) {
+                menu.classList.add("menu--open");
+                menuOpen = true;
+            } else {
+                menu.classList.remove("menu--open");
+                menuOpen = false;
+            }
+        });
+
+        closeBtn.addEventListener("click", () => {
+            menu.classList.remove("menu--open");
+            menuOpen = false;
+        });
+
     </script>
 </body>
 
