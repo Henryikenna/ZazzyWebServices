@@ -619,7 +619,7 @@ footer .footerAll .fasecondPart img {
         text-decoration: none;
         color: #fff;
         cursor: default;
-        animation: change-color 1.8s infinite;
+        animation: change-color 2.2s infinite;
     }
     
     @keyframes change-color {
